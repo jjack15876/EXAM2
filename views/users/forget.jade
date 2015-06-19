@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title= '忘記密碼'
+	body
+		div(style='float:left;margin:10px;')
+			a(href='/') 首頁
+
+		div(style='float:right')
+				a(href='/register', style='margin:10px;') 個人資料
+				a(href='/signin', style='margin:10px;') 登入
+	
+		div(style='padding:50px;')
+			form(name="login", action="/apis/login", method="post")
+				h1 忘記密碼
+				div
+					p
+						label(style='padding-right:50px') 帳號或信箱
+						input(type="text", name="user", placeholder='username@example.com')
+				p
+					span(style='padding-right:210px')
+					input(type="submit", name="submit", value="返回註冊")
+						
+						
+						
